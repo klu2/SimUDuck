@@ -13,8 +13,10 @@ public abstract class Duck {
         this.flyBehaviour = flyBehaviour;
     }
 
-    public final void quack() {
-        quackBehaviour.quack();
+    public String quack() {
+        final String quack = quackBehaviour.quack();
+        System.out.println(quack);
+        return quack;
     }
 
     public final void fly() {
